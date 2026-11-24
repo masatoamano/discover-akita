@@ -62,3 +62,14 @@ ul.tips li{margin-bottom:.55rem}
 .links a span{font-size:.85rem;color:var(--muted)}
 .cap{font-size:.85rem;color:var(--muted);margin-top:6px}
 @media(max-width:600px){.duo{grid-template-columns:1fr}}
+.craft{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:36px 0;border-top:1px solid var(--line)}
+.craft:first-of-type{border-top:0}
+.craft.rev .pics{order:2}
+.craft .pics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.craft .pics img{border-radius:12px;width:100%;height:240px;object-fit:cover}
+.craft .pics img.tall{grid-row:span 2;height:490px}
+.craft .where{font-size:.8rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+.craft h3{font-size:1.6rem;margin:.2rem 0 .5rem}
+.craft p{color:var(--muted);margin:.4rem 0}
+.craft .try{margin-top:10px;font-size:.92rem;background:var(--ice);border-radius:10px;padding:10px 14px}
+@media(max-width:760px){.craft{grid-template-columns:1fr}.craft.rev .pics{order:0}.craft .pics img.tall{height:300px}}
